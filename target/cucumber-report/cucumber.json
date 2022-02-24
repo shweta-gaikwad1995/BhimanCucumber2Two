@@ -1,0 +1,147 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-24T13:13:23.969Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4008700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 6038187200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Bhiman_Applications",
+        "description": "",
+        "id": "transaction-tab-sales;bhiman-applications",
+        "after": [
+          {
+            "result": {
+              "duration": 2005000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHooks.tearDownallure(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7166675000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Login_In_BhimanApplications",
+            "match": {
+              "location": "parallel.SalesNumericTextBoxSteps.login_in_bhiman_applications()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 521777600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User logs_BHiman_Usernames",
+            "match": {
+              "location": "parallel.SalesNumericTextBoxSteps.user_logs_b_himan_usernames()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52760100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs_BHiman_Passwords",
+            "match": {
+              "location": "parallel.SalesNumericTextBoxSteps.user_logs_b_himan_passwords()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 382697200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Clicks on_Bhimans Login-Button",
+            "match": {
+              "location": "parallel.SalesNumericTextBoxSteps.clicks_on_bhimans_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4291650600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Mouse Howers the_Transaction-Tabs and click-Sales",
+            "match": {
+              "location": "parallel.SalesNumericTextBoxSteps.user_mouse_howers_the_transaction_tabs_and_click_sales()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 871767200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User Clicks on AddSales-Button",
+            "match": {
+              "location": "parallel.SalesNumericTextBoxSteps.user_clicks_on_add_sales_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 906394800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User Clicks the BrokersValue",
+            "match": {
+              "location": "parallel.SalesNumericTextBoxSteps.user_clicks_the_brokers_value()"
+            },
+            "keyword": "When "
+          }
+        ]
+      }
+    ],
+    "name": "Transaction_Tab_Sales",
+    "description": "",
+    "id": "transaction-tab-sales",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/parallel/SalesNumerictextbox.feature",
+    "tags": []
+  }
+]
