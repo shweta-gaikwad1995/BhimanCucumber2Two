@@ -19,7 +19,7 @@ import io.cucumber.testng.CucumberOptions;
 				}, 
 		monochrome = true,
 		glue = {"parallel"},
-		features = { "src/test/resources/parallel/SalesNumerictextbox.feature" }
+		features = { "src/test/resources/parallel/BankDataTable2.feature" }
 		
 		)
 

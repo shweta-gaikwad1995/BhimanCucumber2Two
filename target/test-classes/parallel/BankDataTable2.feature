@@ -15,17 +15,12 @@ Then users checks the HomePage-Title "Bhiman Admin Login page"
    When user clicks on-AddBankButton
 
 
-#  When user enters bank-Form-details 
+ When user enters bank-Form-details 
   
- #   | John     |
-  #   | Doe      |
- #    | 123456789  |   
-   #  | Savings |
-   #  | SBIN0005943  |
-  #   |745451556|
+  | John     | Doe      | 123456789  |    Savings |  SBIN0005943  | 745451556|
       
-  #   And Click-submit button
-  #   And Click-Okay Button 
+    And Click-submit button
+   And Click-Okay Button 
      
     
 	

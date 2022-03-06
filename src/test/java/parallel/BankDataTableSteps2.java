@@ -79,5 +79,19 @@ private WebDriver driver=DriverFactory.getDriver();
 		   addbankdetails= bhimanhome.enterbankdetails();
 	}
 
+	@When("user enters bank-Form-details")
+	public void user_enters_bank_form_details(DataTable dataTable) {
+	    
+	}
 	
+	
+	@When("Click-submit button")
+	public void click_submit_button() {
+	   
+	}
+	
+	@When("Click-Okay Button")
+	public void click_okay_button() {
+	  
+	}
 }

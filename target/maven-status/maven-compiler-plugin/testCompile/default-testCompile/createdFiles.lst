@@ -1,0 +1,13 @@
+parallel\BhimanLoginDataSteps2.class
+parallel\AccountsPageSteps.class
+parallel\AddBankDetailsSteps2.class
+parallel\SalesNumericTextBoxSteps.class
+parallel\ContactUsSteps.class
+parallel\BhimanLogo2Steps.class
+parallel\AddBankDataStep2.class
+testrunners\MyTestRunner.class
+parallel\TransactionTabSteps2.class
+parallel\BankDataTableSteps2.class
+parallel\LoginPageSteps.class
+parallel\ParallelRun.class
+parallel\ApplicationHooks.class

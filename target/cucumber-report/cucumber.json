@@ -3,11 +3,68 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-24T13:13:23.969Z",
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2222563200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Add-BankPage",
+            "match": {
+              "location": "parallel.BankDataTableSteps2.add_bank_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 103273500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user logs in with_username",
+            "match": {
+              "location": "parallel.BankDataTableSteps2.user_logs_in_with_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57186100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user logs in with_password",
+            "match": {
+              "location": "parallel.BankDataTableSteps2.user_logs_in_with_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46811300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "users clicks on login-Button",
+            "match": {
+              "location": "parallel.BankDataTableSteps2.users_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-06T04:17:14.569Z",
         "before": [
           {
             "result": {
-              "duration": 4008700,
+              "duration": 5014700,
               "status": "passed"
             },
             "match": {
@@ -16,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 6038187200,
+              "duration": 5378629200,
               "status": "passed"
             },
             "match": {
@@ -24,14 +81,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "Bhiman_Applications",
+        "line": 12,
+        "name": "BHiman Homepage-navigation",
         "description": "",
-        "id": "transaction-tab-sales;bhiman-applications",
+        "id": "add-bank;bhiman-homepage-navigation",
         "after": [
           {
             "result": {
-              "duration": 2005000,
+              "duration": 2005900,
               "status": "passed"
             },
             "match": {
@@ -40,6 +97,7 @@
           },
           {
             "result": {
+              "duration": 1002100,
               "status": "passed"
             },
             "match": {
@@ -52,96 +110,101 @@
         "steps": [
           {
             "result": {
-              "duration": 7166675000,
+              "duration": 304810300,
               "status": "passed"
             },
-            "line": 4,
-            "name": "Login_In_BhimanApplications",
+            "line": 13,
+            "name": "users checks the HomePage-Title \"Bhiman Admin Login page\"",
             "match": {
-              "location": "parallel.SalesNumericTextBoxSteps.login_in_bhiman_applications()"
+              "arguments": [
+                {
+                  "val": "\"Bhiman Admin Login page\"",
+                  "offset": 32
+                }
+              ],
+              "location": "parallel.BankDataTableSteps2.users_checks_the_home_page_title(java.lang.String)"
             },
-            "keyword": "Given "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 521777600,
+              "duration": 2969287700,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User logs_BHiman_Usernames",
+            "line": 14,
+            "name": "user navigates to-bankPage",
             "match": {
-              "location": "parallel.SalesNumericTextBoxSteps.user_logs_b_himan_usernames()"
+              "location": "parallel.BankDataTableSteps2.user_navigates_to_bank_page()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 52760100,
+              "duration": 197525300,
               "status": "passed"
             },
-            "line": 6,
-            "name": "User logs_BHiman_Passwords",
+            "line": 15,
+            "name": "user clicks on-AddBankButton",
             "match": {
-              "location": "parallel.SalesNumericTextBoxSteps.user_logs_b_himan_passwords()"
+              "location": "parallel.BankDataTableSteps2.user_clicks_on_add_bank_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38098700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enters bank-Form-details",
+            "match": {
+              "location": "parallel.BankDataTableSteps2.user_enters_bank_form_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "John",
+                  "Doe",
+                  "123456789",
+                  "Savings",
+                  "SBIN0005943",
+                  "745451556"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Click-submit button",
+            "match": {
+              "location": "parallel.BankDataTableSteps2.click_submit_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 382697200,
+              "duration": 993300,
               "status": "passed"
             },
-            "line": 7,
-            "name": "Clicks on_Bhimans Login-Button",
+            "line": 23,
+            "name": "Click-Okay Button",
             "match": {
-              "location": "parallel.SalesNumericTextBoxSteps.clicks_on_bhimans_login_button()"
+              "location": "parallel.BankDataTableSteps2.click_okay_button()"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4291650600,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User Mouse Howers the_Transaction-Tabs and click-Sales",
-            "match": {
-              "location": "parallel.SalesNumericTextBoxSteps.user_mouse_howers_the_transaction_tabs_and_click_sales()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 871767200,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User Clicks on AddSales-Button",
-            "match": {
-              "location": "parallel.SalesNumericTextBoxSteps.user_clicks_on_add_sales_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 906394800,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User Clicks the BrokersValue",
-            "match": {
-              "location": "parallel.SalesNumericTextBoxSteps.user_clicks_the_brokers_value()"
-            },
-            "keyword": "When "
           }
         ]
       }
     ],
-    "name": "Transaction_Tab_Sales",
+    "name": "Add-bank",
     "description": "",
-    "id": "transaction-tab-sales",
+    "id": "add-bank",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/parallel/SalesNumerictextbox.feature",
+    "uri": "file:src/test/resources/parallel/BankDataTable2.feature",
     "tags": []
   }
 ]
