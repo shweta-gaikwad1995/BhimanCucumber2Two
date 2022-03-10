@@ -190,7 +190,9 @@ public class AddBankDetails extends DriverFactory{
 				WebDriverWait wait__mob = new WebDriverWait(driver, 20);
 				try {
 				    
+					//Xpath of Okay Button
 				    wait__mob.until(ExpectedConditions.elementToBeClickable(By.xpath("//body/div/div/button[1]"))).sendKeys(Keys.ENTER);
+				    
 				    driver.navigate().to(banksUrl);
 				} catch (TimeoutException e) {
 				    System.out.println(e.getMessage());

@@ -5,7 +5,10 @@ import java.util.List;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
@@ -14,20 +17,24 @@ import com.pages.BhimanHomePage;
 import com.pages.BhimanPage;
 import com.qa.factory.DriverFactory;
 
+import io.cucumber.core.backend.Options;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+
 public class BankDataTableSteps2 {
 private WebDriver driver=DriverFactory.getDriver();
 
-
-	
 	private static String title;
 	BhimanHomePage bhimanhome;
 	BhimanPage bhimanpage;
 	private AddBankDetails addbankdetails = new AddBankDetails(DriverFactory.getDriver());
+	
+	
+	
+	
 	
 	@Given("Add-BankPage")
 	public void add_bank_page() {
@@ -79,19 +86,48 @@ private WebDriver driver=DriverFactory.getDriver();
 		   addbankdetails= bhimanhome.enterbankdetails();
 	}
 
+	
 	@When("user enters bank-Form-details")
 	public void user_enters_bank_form_details(DataTable dataTable) {
-	    
+		
+		List<String> bankdata = dataTable.asList();
+	
+		//This is to get the first data of the set (First Row + First Column)
+		driver.findElement(By.xpath("//input[@id='bank_name']")).sendKeys(bankdata.get(0));
+		driver.findElement(By.xpath("//input[@id='account_name']")).sendKeys(bankdata.get(1));
+		driver.findElement(By.xpath("//input[@id='account_no']")).sendKeys(bankdata.get(2));
+	
+	Select account_type=new Select(driver.findElement(By.xpath("//select[@id='bank_account_type']")));
+		List<WebElement> alloptions=account_type.getOptions();
+		for(WebElement option:alloptions)
+		{
+			if(option.getText().equals(bankdata.get(3)))
+			{
+				option.click();
+				break;
+			}
+		}
+	
+		driver.findElement(By.xpath("//input[@id='ifsc_code']")).sendKeys(bankdata.get(4));
+		driver.findElement(By.xpath("//input[@id='micr_code']")).sendKeys(bankdata.get(5));
 	}
 	
 	
 	@When("Click-submit button")
 	public void click_submit_button() {
-	   
+		 addbankdetails.submitButton();
 	}
 	
-	@When("Click-Okay Button")
-	public void click_okay_button() {
-	  
+	
+	
+
+	@When("Click-Okay Alert Button and navigate back to Banks Page")
+	public void click_okay_alert_button_and_navigate_back_to_banks_page() throws InterruptedException {
+		 addbankdetails.clickokay();
+	
 	}
-}
+	
+	
+	
+	}
+

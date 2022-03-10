@@ -20,6 +20,7 @@ import com.qa.factory.DriverFactory;
 public class BhimanHomePage extends DriverFactory{
 	
 	
+	
 	private WebDriver driver=DriverFactory.getDriver();
 	
 	private By bankname1 = By.xpath("//input[@id='bank_name']");

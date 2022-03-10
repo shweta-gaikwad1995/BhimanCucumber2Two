@@ -1,14 +1,14 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "8d522139-aafe-4b7a-b989-abd656586840",
-    "feature": "Add-bank",
-    "scenario": "BHiman Homepage-navigation",
-    "start": 1646540234569,
+    "id": "568e4c2c-9875-4710-8124-e8e8f292d471",
+    "feature": "SwitchToParent",
+    "scenario": "Bhiman_UserApplication",
+    "start": 1646627948072,
     "group": 16,
     "content": "",
     "tags": "",
-    "end": 1646540246215,
+    "end": 1646627968429,
     "className": "passed"
   }
 ]);

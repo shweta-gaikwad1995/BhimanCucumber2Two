@@ -3,68 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 2222563200,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "Add-BankPage",
-            "match": {
-              "location": "parallel.BankDataTableSteps2.add_bank_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 103273500,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user logs in with_username",
-            "match": {
-              "location": "parallel.BankDataTableSteps2.user_logs_in_with_username()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 57186100,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user logs in with_password",
-            "match": {
-              "location": "parallel.BankDataTableSteps2.user_logs_in_with_password()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 46811300,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "users clicks on login-Button",
-            "match": {
-              "location": "parallel.BankDataTableSteps2.users_clicks_on_login_button()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-03-06T04:17:14.569Z",
+        "start_timestamp": "2022-03-07T04:39:08.072Z",
         "before": [
           {
             "result": {
-              "duration": 5014700,
+              "duration": 88233800,
               "status": "passed"
             },
             "match": {
@@ -73,7 +16,7 @@
           },
           {
             "result": {
-              "duration": 5378629200,
+              "duration": 11439196700,
               "status": "passed"
             },
             "match": {
@@ -81,14 +24,14 @@
             }
           }
         ],
-        "line": 12,
-        "name": "BHiman Homepage-navigation",
+        "line": 3,
+        "name": "Bhiman_UserApplication",
         "description": "",
-        "id": "add-bank;bhiman-homepage-navigation",
+        "id": "switchtoparent;bhiman-userapplication",
         "after": [
           {
             "result": {
-              "duration": 2005900,
+              "duration": 1002400,
               "status": "passed"
             },
             "match": {
@@ -97,7 +40,6 @@
           },
           {
             "result": {
-              "duration": 1002100,
               "status": "passed"
             },
             "match": {
@@ -110,101 +52,96 @@
         "steps": [
           {
             "result": {
-              "duration": 304810300,
+              "duration": 3185323700,
               "status": "passed"
             },
-            "line": 13,
-            "name": "users checks the HomePage-Title \"Bhiman Admin Login page\"",
+            "line": 4,
+            "name": "Logs_In_BhimanApplication",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Bhiman Admin Login page\"",
-                  "offset": 32
-                }
-              ],
-              "location": "parallel.BankDataTableSteps2.users_checks_the_home_page_title(java.lang.String)"
+              "location": "parallel.SwitchToParentTabSteps.logs_in_bhiman_application()"
             },
-            "keyword": "Then "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2969287700,
+              "duration": 259690000,
               "status": "passed"
             },
-            "line": 14,
-            "name": "user navigates to-bankPage",
+            "line": 5,
+            "name": "User _logs_BHiman_Username",
             "match": {
-              "location": "parallel.BankDataTableSteps2.user_navigates_to_bank_page()"
+              "location": "parallel.SwitchToParentTabSteps.user__logs_b_himan_username()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 197525300,
+              "duration": 80214900,
               "status": "passed"
             },
-            "line": 15,
-            "name": "user clicks on-AddBankButton",
+            "line": 6,
+            "name": "User _logs_BHiman_Password",
             "match": {
-              "location": "parallel.BankDataTableSteps2.user_clicks_on_add_bank_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 38098700,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user enters bank-Form-details",
-            "match": {
-              "location": "parallel.BankDataTableSteps2.user_enters_bank_form_details(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "John",
-                  "Doe",
-                  "123456789",
-                  "Savings",
-                  "SBIN0005943",
-                  "745451556"
-                ]
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "Click-submit button",
-            "match": {
-              "location": "parallel.BankDataTableSteps2.click_submit_button()"
+              "location": "parallel.SwitchToParentTabSteps.user__logs_b_himan_password()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 993300,
+              "duration": 52138700,
               "status": "passed"
             },
-            "line": 23,
-            "name": "Click-Okay Button",
+            "line": 7,
+            "name": "Clicks _on_Bhiman Login-Button",
             "match": {
-              "location": "parallel.BankDataTableSteps2.click_okay_button()"
+              "location": "parallel.SwitchToParentTabSteps.clicks__on_bhiman_login_button()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4114453000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Mouse_-Howers the_Transaction-Tab and click-Sales",
+            "match": {
+              "location": "parallel.SwitchToParentTabSteps.user_mouse_howers_the_transaction_tab_and_click_sales()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 225852500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User Clicks_on_Print-Button \u0026 Opens-Browser in New_Tab",
+            "match": {
+              "location": "parallel.SwitchToParentTabSteps.user_clicks_on_print_button_opens_browser_in_new_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 586560500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User Navigates_back to_SalesTab",
+            "match": {
+              "location": "parallel.SwitchToParentTabSteps.user_navigates_back_to_sales_tab()"
+            },
+            "keyword": "When "
           }
         ]
       }
     ],
-    "name": "Add-bank",
+    "name": "SwitchToParent",
     "description": "",
-    "id": "add-bank",
+    "id": "switchtoparent",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/parallel/BankDataTable2.feature",
+    "uri": "file:src/test/resources/parallel/SwitchToParent.feature",
     "tags": []
   }
 ]
